@@ -1,7 +1,7 @@
 let nombreAlumno: string = String(prompt("Ingrese nombre del Alumno"));
-console.log(nombreAlumno);
 let notaFinal: number = 0;
 while (nombreAlumno !== "") {
+  console.log(nombreAlumno);
   let notaPractica: number = Number(prompt("Ingrese nota parte Practica"));
   let notaProblemas: number = Number(prompt("Ingrese nota parte Problemas"));
   let notaTeorica: number = Number(prompt("Ingrese nota parte Teorica"));
@@ -17,9 +17,8 @@ while (nombreAlumno !== "") {
       notaPractica * 0.1 + notaProblemas * 0.5 + notaTeorica * 0.4
     );
     console.log("La Nota Final del alumno es: ", notaFinal);
-    break;
   } else {
     console.log("carga incorrecta");
-    break;
   }
+  nombreAlumno = String(prompt("Ingrese nombre del Alumno"));
 }
