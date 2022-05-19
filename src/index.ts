@@ -1,5 +1,5 @@
 let nombreAlumno: string = String(prompt("Ingrese nombre del Alumno"));
-console.log(nombreAlumno);
+// console.log(nombreAlumno);
 let notaFinal: number = 0;
 while (nombreAlumno !== "") {
   let notaPractica: number = Number(prompt("Ingrese nota parte Practica"));
@@ -20,6 +20,6 @@ while (nombreAlumno !== "") {
     break;
   } else {
     console.log("carga incorrecta");
-    break;
+    // break;
   }
 }
